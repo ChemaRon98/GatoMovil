@@ -123,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton9.setEnabled(true);
             Boton9.setText("");
 
+            conta=0;
 
         }
 //Salir
@@ -200,9 +201,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
 
 
-        if((Boton1.getText().toString().equals(letra+"")) && (Boton2.getText().toString().equals(letra+"")) && (Boton3.getText().toString().equals(letra+"")))
+
+        if ((Boton1.getText().toString().equals(letra + "")) && (Boton2.getText().toString().equals(letra + "")) && (Boton3.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton4.setEnabled(false);
@@ -211,10 +213,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton7.setEnabled(false);
             Boton8.setEnabled(false);
             Boton9.setEnabled(false);
-        }
-        else if ((Boton4.getText().toString().equals(letra+"")) && (Boton5.getText().toString().equals(letra+"")) && (Boton6.getText().toString().equals(letra+"")))
+        } else if ((Boton4.getText().toString().equals(letra + "")) && (Boton5.getText().toString().equals(letra + "")) && (Boton6.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton1.setEnabled(false);
@@ -224,11 +225,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton8.setEnabled(false);
             Boton9.setEnabled(false);
 
-        }
-
-        else if ((Boton7.getText().toString().equals(letra+"")) && (Boton8.getText().toString().equals(letra+"")) && (Boton9.getText().toString().equals(letra+"")))
+        } else if ((Boton7.getText().toString().equals(letra + "")) && (Boton8.getText().toString().equals(letra + "")) && (Boton9.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton1.setEnabled(false);
@@ -237,10 +236,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton4.setEnabled(false);
             Boton5.setEnabled(false);
             Boton6.setEnabled(false);
+
         }
-        else if ((Boton1.getText().toString().equals(letra+"")) && (Boton4.getText().toString().equals(letra+"")) && (Boton7.getText().toString().equals(letra+"")))
+        else if ((Boton1.getText().toString().equals(letra + "")) && (Boton4.getText().toString().equals(letra + "")) && (Boton7.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton2.setEnabled(false);
@@ -250,9 +250,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton8.setEnabled(false);
             Boton9.setEnabled(false);
         }
-        else if ((Boton2.getText().toString().equals(letra+"")) && (Boton5.getText().toString().equals(letra+"")) && (Boton8.getText().toString().equals(letra+"")))
+        else if ((Boton2.getText().toString().equals(letra + "")) && (Boton5.getText().toString().equals(letra + "")) && (Boton8.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton1.setEnabled(false);
@@ -262,9 +262,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton6.setEnabled(false);
             Boton9.setEnabled(false);
         }
-        else if ((Boton3.getText().toString().equals(letra+"")) && (Boton6.getText().toString().equals(letra+"")) && (Boton9.getText().toString().equals(letra+"")))
+        else if ((Boton3.getText().toString().equals(letra + "")) && (Boton6.getText().toString().equals(letra + "")) && (Boton9.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton1.setEnabled(false);
@@ -274,10 +274,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton7.setEnabled(false);
             Boton8.setEnabled(false);
         }
-
-        else if ((Boton1.getText().toString().equals(letra+"")) && (Boton5.getText().toString().equals(letra+"")) && (Boton9.getText().toString().equals(letra+"")))
+        else if ((Boton1.getText().toString().equals(letra + "")) && (Boton5.getText().toString().equals(letra + "")) && (Boton9.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton2.setEnabled(false);
@@ -287,10 +286,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton7.setEnabled(false);
             Boton8.setEnabled(false);
         }
-
-        else if ((Boton3.getText().toString().equals(letra+"")) && (Boton5.getText().toString().equals(letra+"")) && (Boton7.getText().toString().equals(letra+"")))
+        else if ((Boton3.getText().toString().equals(letra + "")) && (Boton5.getText().toString().equals(letra + "")) && (Boton7.getText().toString().equals(letra + "")))
         {
-            Ed_ganador.setText("El ganador es " +letra);
+            Ed_ganador.setText("El ganador es " + letra);
             Ed_ganador.setEnabled(false);
 
             Boton1.setEnabled(false);
@@ -301,22 +299,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Boton9.setEnabled(false);
         }
 
+        if (conta < 9 )
+        {
+            conta++;
+        }
+        else
+        {
+
+            Ed_ganador.setText("Empate");
+            Ed_ganador.setEnabled(true);
 
 
+        }
 
+        //holaaa
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+

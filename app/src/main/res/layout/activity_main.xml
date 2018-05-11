@@ -11,25 +11,29 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:id="@+id/Fila1"
+          android:layout_centerHorizontal="true"
           android:orientation="horizontal" >
 
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:id="@+id/Boton1"
-             android:text=" "  />
+          <Button
+              android:id="@+id/Boton1"
+              style="@style/Widget.AppCompat.Button.Small"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" " />
 
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:id="@+id/Boton2"
-             android:text=" "  />
+          <Button
+              android:id="@+id/Boton2"
+              style="@style/Widget.AppCompat.Button.Small"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" " />
 
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:id="@+id/Boton3"
-             android:text=" "  />
+          <Button
+              android:id="@+id/Boton3"
+              style="@style/Widget.AppCompat.Button.Small"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" " />
 
       </LinearLayout>
 
@@ -39,26 +43,30 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/Fila2"
+       android:layout_centerHorizontal="true"
        android:orientation="horizontal"
        android:layout_below="@+id/Fila1" >
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton4"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton4"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton5"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton5"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton6"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton6"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
    </LinearLayout>
 
@@ -70,25 +78,29 @@
        android:layout_height="wrap_content"
        android:id="@+id/Fila3"
        android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
        android:layout_below="@+id/Fila2" >
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton7"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton7"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton8"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton8"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/Boton9"
-          android:text=" "  />
+       <Button
+           android:id="@+id/Boton9"
+           style="@style/Widget.AppCompat.Button.Small"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" " />
 
 
 
@@ -99,35 +111,39 @@
      android:layout_width="fill_parent"
      android:layout_height="wrap_content"
      android:orientation="vertical"
-     android:layout_below="@+id/Fila3"
-     >
+     android:background="@drawable/octocat"
+     android:layout_below="@+id/Fila3">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="\n GANADOR"
-        android:layout_gravity="center"
-        />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:text="\n GANADOR"
+         android:textColor="@color/blanco" />
 
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
         android:id="@+id/Ed_ganador"
         android:layout_gravity="center"/>
 
 
      <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/limpia"
-        android:text="Reiniciar"/>
+         android:id="@+id/limpia"
+         style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Reiniciar" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/salir"
-        android:text="Salir"/>
+     <Button
+         android:id="@+id/salir"
+         style="@style/Widget.AppCompat.Button.Borderless"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Salir" />
 
 
  </LinearLayout>
