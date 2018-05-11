@@ -308,11 +308,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Ed_ganador.setText("Empate");
             Ed_ganador.setEnabled(true);
-
-
         }
 
-        //holaaa
+
     }
 }
 
